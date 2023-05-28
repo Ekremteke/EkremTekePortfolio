@@ -1,79 +1,102 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
 }
 
-header {
+.header {
   display: flex;
   align-items: center;
+  padding: 7px 10% 10px 7%;
+  height: 50px;
+  font-size: 11px;
   justify-content: space-between;
-  background-color: #f8f8f8;
-  padding: 20px;
-  border-bottom: 1px solid #ccc;
+  font-weight: bold;
 }
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+a {
+  text-decoration: none;
+  color: black;
+}
+p {
+  margin: 5px;
+}
+.logo-container {
   display: flex;
   align-items: center;
 }
 
-nav ul li {
-  margin-right: 20px;
-  position: relative;
+.logo-image {
+  width: 70px;
+  height: auto;
 }
 
-nav ul li a {
-  text-decoration: none;
-  color: #333;
-}
-
-nav ul li a:hover {
+a:hover {
   color: #666;
 }
 
-nav ul li .dropdown-content {
+.dropdown-content {
   display: none;
   position: absolute;
   background-color: #fff;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   padding: 10px;
+  border-radius: 15px;
 }
 
-nav ul li:hover .dropdown-content {
+.dropdown-content {
   display: flex;
   flex-direction: column;
-  
+}
+
+.search-box-container {
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding: 5px;
+  border-radius: 5px;
+  color: blue;
 }
 
 .search-box {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-  padding: 5px;
-  background-color: #fff;
-  border-radius: 5px;
-}
-
-.search-box input {
   border: none;
   outline: none;
-  padding: 5px;
+  padding: 5px 25px;
   margin-right: 5px;
+  background-color: #ebebeb;
+  border-radius: 15px;
+  font-size: 11px;
+  color: black;
+  width: 200px;
+  height: 20px;
 }
 
-.search-box .fa-microphone {
-  color: #666;
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: #999;
+}
+.mic-icon {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+}
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  font-size: 9px;
 }
 
-.fa-map-marker-alt, .fa-heart, .fa-sign-in-alt {
-  color: #333;
-  margin-left: 10px;
+.icon {
+  margin-bottom: 5px;
+  margin-top: 5px;
+  height: 15px;
 }

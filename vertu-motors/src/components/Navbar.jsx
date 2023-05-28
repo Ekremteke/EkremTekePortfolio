@@ -1,5 +1,13 @@
 import React, { useState, useEffect, useRef } from "react";
 import logo from "../images/vertu-motors-logo.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronDown, faSearch, faLocationDot, faMicrophone } from '@fortawesome/free-solid-svg-icons';
+import { faHeart as farHeart } from "@fortawesome/free-regular-svg-icons";
+import { faUser as faUserRegular } from "@fortawesome/free-regular-svg-icons";
+
+
+
+
 
 
 const Navbar = () => {
@@ -29,79 +37,85 @@ const Navbar = () => {
     };
 
     return (
-        <header>
-            <div className="logo">
-                <img src={logo} alt="Logo" />
+        <header className="header">
+
+            <div className="logo-container">
+                <img className="logo-image" src={logo} alt="Logo" />
             </div>
-            <nav>
-                <ul>
-                    <li className={`menu-item ${isMenuActive("newCars") ? "active" : ""}`}>
-                        <a href="#" onClick={() => toggleMenu("newCars")}>
-                            New cars
-                            <i className={`fas fa-chevron-${isMenuActive("newCars") ? "up" : "down"}`}></i>
-                        </a>
-                        {isMenuActive("newCars") && (
-                            <div className="dropdown-content" ref={dropdownRef}>
-                                <a href="#">Option 1</a>
-                                <a href="#">Option 2</a>
-                                <a href="#">Option 3</a>
-                            </div>
-                        )}
-                    </li>
-                    <li className={`menu-item ${isMenuActive("usedCars") ? "active" : ""}`}>
-                        <a href="#" onClick={() => toggleMenu("usedCars")}>
-                            Used cars
-                            <i className={`fas fa-chevron-${isMenuActive("usedCars") ? "up" : "down"}`}></i>
-                        </a>
-                        {isMenuActive("usedCars") && (
-                            <div className="dropdown-content" ref={dropdownRef}>
-                                <a href="#">Option 1</a>
-                                <a href="#">Option 2</a>
-                                <a href="#">Option 3</a>
-                            </div>
-                        )}
-                    </li>
-                    <li className={`menu-item ${isMenuActive("servicing") ? "active" : ""}`}>
-                        <a href="#" onClick={() => toggleMenu("servicing")}>
-                            Servicing
-                            <i className={`fas fa-chevron-${isMenuActive("servicing") ? "up" : "down"}`}></i>
-                        </a>
-                        {isMenuActive("servicing") && (
-                            <div className="dropdown-content" ref={dropdownRef}>
-                                <a href="#">Option 1</a>
-                                <a href="#">Option 2</a>
-                                <a href="#">Option 3</a>
-                            </div>
-                        )}
-                    </li>
-                    <li className={`menu-item ${isMenuActive("commercials") ? "active" : ""}`}>
-                        <a href="#" onClick={() => toggleMenu("commercials")}>
-                            Commercials
-                            <i className={`fas fa-chevron-${isMenuActive("commercials") ? "up" : "down"}`}></i>
-                        </a>
-                        {isMenuActive("commercials") && (
-                            <div className="dropdown-content" ref={dropdownRef}>
-                                <a href="#">Option 1</a>
-                                <a href="#">Option 2</a>
-                                <a href="#">Option 3</a>
-                            </div>
-                        )}
-                    </li>
-                    <li className="search-box">
-                        <input type="text" placeholder='Search: "Make, model or location"' />
-                        <i className="fas fa-microphone"></i>
-                    </li>
-                    <li>
-                        <i className="fas fa-map-marker-alt"></i>
-                    </li>
-                    <li>
-                        <i className="far fa-heart"></i>
-                    </li>
-                    <li>
-                        <i className="fas fa-sign-in-alt"></i>
-                    </li>
-                </ul>
-            </nav>
+
+            <span >
+                <a href="#" onClick={() => toggleMenu("newCars")}>
+                    New cars {"   "}
+                    <FontAwesomeIcon className="faChevronDown" icon={faChevronDown} />
+                </a>
+                {isMenuActive("newCars") && (
+                    <div className="dropdown-content" ref={dropdownRef}>
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                    </div>
+                )}
+            </span>
+            <span >
+                <a href="#" onClick={() => toggleMenu("usedCars")}>
+                    Used cars{"   "}
+
+                    <FontAwesomeIcon className="faChevronDown" icon={faChevronDown} />
+                </a>
+                {isMenuActive("usedCars") && (
+                    <div className="dropdown-content" ref={dropdownRef}>
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                    </div>
+                )}
+            </span>
+            <span >
+                <a href="#" onClick={() => toggleMenu("servicing")}>
+                    Servicing {"   "}
+                    <FontAwesomeIcon icon={faChevronDown} />
+                </a>
+                {isMenuActive("servicing") && (
+                    <div className="dropdown-content" ref={dropdownRef}>
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                    </div>
+                )}
+            </span>
+            <span>
+                <a href="#" onClick={() => toggleMenu("commercials")}>
+                    Commercials {"   "}
+                    <FontAwesomeIcon icon={faChevronDown} />
+                </a>
+                {isMenuActive("commercials") && (
+                    <div className="dropdown-content" ref={dropdownRef}>
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                    </div>
+                )}
+            </span>
+            <span className="search-box-container">
+                <input className="search-box" type="text" placeholder='Search: "Make, model or location"' />
+                <FontAwesomeIcon icon={faSearch} className="search-icon" />
+                <FontAwesomeIcon icon={faMicrophone} className="mic-icon" />
+            </span>
+
+
+            <div className="icon-container">
+                <FontAwesomeIcon icon={faLocationDot} className="icon" />
+                <span className="text">Find us</span>
+            </div>
+            <div className="icon-container">
+                <FontAwesomeIcon icon={farHeart} className="icon" />
+                <span className="text">Save</span>
+            </div>
+            <div className="icon-container">
+                <FontAwesomeIcon icon={faUserRegular} className="icon" />
+                <span className="text">Log in</span>
+            </div>
+
         </header>
     )
 }
