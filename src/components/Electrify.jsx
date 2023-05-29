@@ -128,26 +128,26 @@ function Electrify() {
 
             </div>
             <div className="electrify-container-mobile">
-                <div className="electrify-image-container">
-                    <img className="electrify-image" src={image} alt="interior-image" />
+                <div className="electrify-image-container-mobile">
+                    <img className="electrify-image-mobile" src={image} alt="interior-image" />
                 </div>
-                <div className="electrify-content-container">
-                    <h3 className="electrify-title">Electrifying performance with the BMW i4</h3>
-                    <p className="electrify-text">
+                <div className="electrify-content-container-mobile">
+                    <h1 className="electrify-title-mobile">Electrifying performance with the BMW i4</h1>
+                    <p className="electrify-text-mobile">
                         From the cool Trend and SUV-inspired Active to the sporty ST-Line,
                         the eighth generation Fiesta impresses across the range.
                     </p>
                     <div className="time-container">
-                        <div className="electrifying-container">
-                            <h3>02:05 hr</h3>
+                        <div className="electrifying-container-mobile">
+                            <h1>02:05 hr</h1>
                             <p className="text">Charging at home for a Range of 62 miles</p>
                         </div>
-                        <div className="electrifying-container2">
-                            <h3>365</h3>
+                        <div className="electrifying-container2-mobile">
+                            <h1>365</h1>
                             <p className="text">Electric range in miles</p>
                         </div>
                     </div>
-                    <button className="btn-test-drive" onClick={handleOpen}>
+                    <button className="btn-test-drive-mobile2" onClick={handleOpen}>
                         Book a test drive
                     </button>
                     {isOpen && (
