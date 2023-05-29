@@ -156,17 +156,17 @@ a:hover {
   width: 85%;
   line-height: 1.5;
   text-align: center;
-  font-size: large;
+  font-size: 20px;
   letter-spacing: 1.5px;
 }
 
 .btn-test-drive-mobile {
-  margin: 20px auto;
-  border-radius: 5px;
-  height: 60px;
+  margin: 20px auto 30px;
+  border-radius: 10px;
+  height: 70px;
   width: 85%;
   padding: auto;
-  font-size: larger;
+  font-size: 20px;
   font-weight: bold;
   background-color: #00e2c9;
   color: #013a3c;
@@ -189,6 +189,16 @@ a:hover {
   background-color: #00e2c9;
   color: #013a3c;
   border: none;
+}
+.modal-mobile {
+  position: absolute;
+  margin: 50%;
+  height: 500px;
+  width: 300px;
+  display: block;
+  flex-direction: column;
+  background-color: #ebebeb;
+  color: #222222;
 }
 .modal {
   height: 500px;
@@ -412,6 +422,6 @@ a:hover {
     background-color: #222222;
   }
   .mobile-cover-content {
-    height: 360px;
+    height: 390px;
   }
 }
