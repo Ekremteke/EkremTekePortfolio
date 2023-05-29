@@ -154,7 +154,7 @@ a:hover {
   color: #013a3c;
   border: none;
 }
-.modal{
+.modal {
   height: 500px;
   width: 300px;
   display: flex;
@@ -162,11 +162,10 @@ a:hover {
   background-color: #ebebeb;
   color: #222222;
 }
-.modal-content input{
+.modal-content input {
   width: 200px;
   display: block;
 }
-
 
 .card-container {
   display: flex;
@@ -227,13 +226,13 @@ a:hover {
   justify-content: center;
 }
 .interior-image-container {
- padding: auto auto;
+  padding: auto auto;
   width: 50%;
   display: flex;
- align-items: center;
- margin-right: 7%;
+  align-items: center;
+  margin-right: 7%;
 }
-.interior-image{
+.interior-image {
   height: 65%;
   width: auto;
   border-radius: 5px;
@@ -265,7 +264,6 @@ a:hover {
   border: none;
 }
 .electrify-container {
- 
   height: 250px;
   background-color: #222222;
   display: flex;
@@ -273,20 +271,20 @@ a:hover {
 .electrify-content-container {
   display: flex;
   top: 50%;
-  margin:0 7% 0 5%;
+  margin: 0 7% 0 5%;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .electrify-image-container {
- padding: auto auto;
+  padding: auto auto;
   width: 50%;
   display: flex;
- align-items: center;
- margin-left: 7%;
+  align-items: center;
+  margin-left: 7%;
 }
-.electrify-image{
+.electrify-image {
   height: 70%;
   width: auto;
   border-radius: 5px;
@@ -315,29 +313,54 @@ a:hover {
 .electrifying-container h3 {
   margin-bottom: 0px;
 }
-.electrifying-container p{
-font-size: xx-small;
-width: 90px;
-margin-top: 5px;
-margin-left: 0px;
+.electrifying-container p {
+  font-size: xx-small;
+  width: 90px;
+  margin-top: 5px;
+  margin-left: 0px;
 }
-.time-container{
+.time-container {
   display: flex;
-  
 }
-.electrifying-container2{
+.electrifying-container2 {
   display: flex;
   flex-direction: column;
   color: white;
   margin-left: 20px;
 }
-.electrifying-container2 p{
-font-size: xx-small;
-width: 90px;
-margin-top: 5px;
-margin-left: 0px;
+.electrifying-container2 p {
+  font-size: xx-small;
+  width: 90px;
+  margin-top: 5px;
+  margin-left: 0px;
 }
 .electrifying-container2 h3 {
   margin-bottom: 0px;
 }
 
+.hamburger-menu {
+  display: none;
+}
+
+.menu-items {
+  display: none;
+}
+
+@media (max-width: 550px) {
+  .hamburger-menu {
+    display: block;
+    height: 40px;
+    /* Add styling for the hamburger icon */
+  }
+
+  .menu-items {
+    display: flex;
+    flex-direction: column;
+  }
+  .header {
+    display: none;
+  }
+  .hamburger-icon{
+    margin: 13px;
+  }
+}

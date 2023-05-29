@@ -43,8 +43,8 @@ function Electrify() {
                 </p>
                 <div className="time-container">
                     <div className="electrifying-container">
-                     <h3>02:05 hr</h3>
-                     <p className="text">Charging at home for a Range of 62 miles</p>
+                        <h3>02:05 hr</h3>
+                        <p className="text">Charging at home for a Range of 62 miles</p>
                     </div>
                     <div className="electrifying-container2">
                         <h3>365</h3>
