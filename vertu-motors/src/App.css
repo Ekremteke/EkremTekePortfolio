@@ -100,3 +100,41 @@ a:hover {
   margin-top: 5px;
   height: 15px;
 }
+
+.cover-container {
+  display: flex;
+  position: relative;
+}
+.cover-image {
+ 
+  width: 100%;
+  margin: 0%;
+  height: auto;
+}
+.cover-content {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translateY(-50%);
+  color: white;
+  
+}
+.cover-title{
+  width: 30%;
+  line-height: 1.5;
+}
+.cover-text{
+  width: 36%;
+  line-height: 1.5;
+}
+.btn-test-drive{
+  margin-top: 15px;
+  border-radius: 5px;
+  height: 40px;
+  padding: 10px 10px;
+  font-size: 12px;
+  font-weight: bold;
+  background-color:#00E2C9 ;
+  color: #013A3C;
+  border: none;
+}
