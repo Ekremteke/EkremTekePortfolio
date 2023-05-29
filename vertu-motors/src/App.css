@@ -9,9 +9,9 @@ body {
 .header {
   display: flex;
   align-items: center;
-  padding: 7px 10% 10px 7%;
+  padding: 7px 5% 0px 5%;
   height: 50px;
-  font-size: 11px;
+  font-size: xx-small;
   justify-content: space-between;
   font-weight: bold;
 }
@@ -28,7 +28,7 @@ p {
 }
 
 .logo-image {
-  width: 70px;
+  width: 60px;
   height: auto;
 }
 
@@ -68,10 +68,10 @@ a:hover {
   margin-right: 5px;
   background-color: #ebebeb;
   border-radius: 15px;
-  font-size: 11px;
+  font-size: 9px;
   color: black;
-  width: 200px;
-  height: 20px;
+  width: 160px;
+  height: 15px;
 }
 
 .search-icon {
@@ -85,25 +85,27 @@ a:hover {
   position: absolute;
   top: 50%;
   right: 20px;
-  top: 50%;
   transform: translateY(-50%);
   color: #999;
 }
 .icon-container {
   display: flex;
   flex-direction: column;
-  font-size: 9px;
+  font-size: 7px;
 }
 
 .icon {
   margin-bottom: 5px;
   margin-top: 5px;
-  height: 15px;
+  height: 10px;
 }
 
 .cover-container {
   display: flex;
+}
+.image-container {
   position: relative;
+  width: 1fr;
 }
 .cover-image {
   width: 100%;
@@ -116,66 +118,84 @@ a:hover {
   left: 8%;
   transform: translateY(-50%);
   color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .cover-title {
-  width: 30%;
-  line-height: 1.5;
+  width: 20%;
+  line-height: 1.3;
+  margin: 10px 0px;
 }
 .cover-text {
-  width: 36%;
-  line-height: 1.5;
+  margin: 0px 0px 10px 0px;
+  width: 24%;
+  line-height: 1.3;
+}
+.cover-content p {
+  font-size: xx-small;
+}
+.card-area h5 {
+  margin-left: 5%;
+  font-weight: bold;
+  font-size: 15px;
 }
 .btn-test-drive {
-  margin-top: 15px;
+  margin-top: 10px;
   border-radius: 5px;
-  height: 40px;
-  padding: 10px 10px;
-  font-size: 12px;
+  height: 25px;
+  width: 90px;
+  padding: auto;
+  font-size: xx-small;
   font-weight: bold;
   background-color: #00e2c9;
   color: #013a3c;
   border: none;
 }
+.card-container {
+  display: flex;
+  justify-content: center;
+  margin: 10px auto 20px auto;
+}
 .card {
   display: inline-block;
-  margin: 15px;
+  margin: 5px;
   padding: 20px;
   background-color: #ffffff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
-  width: 25%;
+  width: 24%;
 }
 
 .card-image {
   width: 100%;
-  max-height: 200px;
+
   object-fit: cover;
 }
 
 .card-content {
-  /* margin-top: 10px; */
 }
 
 .card-title {
-  font-size: 18px;
+  font-size: small;
   font-weight: bold;
+  margin-left: 5px;
 }
 
 .card-price {
-  font-size: 16px;
+  font-size: x-small;
   margin-top: 5px;
 }
 
 .card-bullets {
   margin-top: 10px;
   padding-left: 0;
+  font-size: xx-small;
 }
 
 .card-bullets li {
   list-style-type: disc;
-  margin-left: 20px;
-}
-.card-container {
-  margin: 50px auto;
-  justify-content: space-between;
+  margin-left: 15px;
 }

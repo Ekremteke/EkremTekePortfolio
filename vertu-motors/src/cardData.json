@@ -1,8 +1,8 @@
 [
   {
-    "image": "/images/card-m50.png",
+    "image": "image1",
     "name": "M 50",
-    "price": "from £65,795",
+    "price": "From £65,795",
     "bullets": [
       "Velour floor mats",
       "Sun protection glass",
@@ -14,9 +14,9 @@
     ]
   },
   {
-    "image": "/images/card-m-sport.png",
+    "image": "image2",
     "name": "M Sport",
-    "price": "from £54,980",
+    "price": "From £54,980",
     "bullets": [
       "Velour floor mats",
       "Rain sensor including auto headlights activation",
@@ -27,9 +27,9 @@
     ]
   },
   {
-    "image": "/images/card-sport.png",
+    "image": "image3",
     "name": "Sport",
-    "price": "from £53,480",
+    "price": "From £53,480",
     "bullets": [
       "Velour floor mats",
       "Rain sensor including auto headlights activation",
