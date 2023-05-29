@@ -41,18 +41,18 @@ const Navbar = () => {
     return (
         <div>
             <div className="hamburger-menu">
-            <div onClick={toggleHamburgerMenu}>
-                <FontAwesomeIcon icon={faBars} className="hamburger-icon" />
-            </div>
-
-            {menuActive && (
-                <div className="menu-items">
-                    <a href="#">New cars</a>
-                    <a href="#">Used cars</a>
-                    <a href="#">Servicing</a>
-                    <a href="#">Commercials</a>
+                <div onClick={toggleHamburgerMenu}>
+                    <FontAwesomeIcon icon={faBars} className="hamburger-icon" />
                 </div>
-            )}
+
+                {menuActive && (
+                    <div className="menu-items">
+                        <a href="#">New cars</a>
+                        <a href="#">Used cars</a>
+                        <a href="#">Servicing</a>
+                        <a href="#">Commercials</a>
+                    </div>
+                )}
                 <div className="logo-container">
                     <img className="logo-image" src={logo} alt="Logo" />
                 </div>
