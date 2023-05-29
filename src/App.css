@@ -348,7 +348,7 @@ a:hover {
 
 @media (max-width: 550px) {
   .hamburger-menu {
-    display: block;
+    display: flex;
     height: 40px;
     /* Add styling for the hamburger icon */
   }
