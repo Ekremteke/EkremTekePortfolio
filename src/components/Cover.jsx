@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import cover from "../images/cover-desktop.png";
+import mobile from "../images/cover-mobile.png";
 
 function Cover() {
     const [isOpen, setIsOpen] = useState(false);
@@ -32,6 +33,88 @@ function Cover() {
 
     return (
         <div className="cover-container">
+            <div className='cover-mobile'>
+                <img className="mobile-image" src={mobile} alt="Logo" />
+                <div className="mobile-cover-content">
+                    <h1 className="mobile-cover-title">Explore the new BMW i4 range</h1>
+                    <p className="mobile-cover-text">
+                        From the cool Trend and SUV-inspired Active to the sporty ST-Line,
+                        the eighth generation Fiesta impresses across the range.
+                    </p>
+                    <button className="btn-test-drive-mobile" onClick={handleOpen}>
+                        Book a test drive
+                    </button>
+                    {isOpen && (
+                        <div className="modal">
+                            {!showConfirmation ? (
+                                <div className="modal-content">
+                                    <form onSubmit={handleSubmit}>
+                                        <label>
+                                            Name:
+                                            <input
+                                                type="text"
+                                                value={name}
+                                                onChange={(e) => setName(e.target.value)}
+                                            />
+                                        </label>
+                                        <br />
+                                        <label>
+                                            Surname:
+                                            <input
+                                                type="text"
+                                                value={surname}
+                                                onChange={(e) => setSurname(e.target.value)}
+                                            />
+                                        </label>
+                                        <br />
+                                        <label>
+                                            Date:
+                                            <input
+                                                type="date"
+                                                value={date}
+                                                onChange={(e) => setDate(e.target.value)}
+                                            />
+                                        </label>
+                                        <br />
+                                        <label>
+                                            Time:
+                                            <input
+                                                type="time"
+                                                value={time}
+                                                onChange={(e) => setTime(e.target.value)}
+                                            />
+                                        </label>
+                                        <br />
+                                        <label>
+                                            Email:
+                                            <input
+                                                type="email"
+                                                value={email}
+                                                onChange={(e) => setEmail(e.target.value)}
+                                            />
+                                        </label>
+                                        <br />
+                                        <button className='btn-test-drive' type="submit">Submit</button>
+                                    </form>
+                                    <br />
+                                    <button className='btn-test-drive' onClick={handleClose}>Close</button>
+                                </div>
+                            ) : (
+                                <div className="modal-content">
+                                    <p>Dear {name} {surname},
+                                        <br />Your appointment has adjusted on {date} at {time}. We will be happy to see you.
+                                        <br />
+                                        Kind regards,
+                                    </p>
+                                    <br />
+                                    <button className='btn-test-drive' onClick={handleClose}>Close</button>
+                                </div>
+                            )}
+                        </div>
+
+                    )}
+                </div>
+            </div>
             <div className="image-container">
                 <img className="cover-image" src={cover} alt="Logo" />
                 <div className="cover-content">

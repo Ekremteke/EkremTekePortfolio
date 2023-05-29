@@ -137,6 +137,42 @@ a:hover {
 .cover-content p {
   font-size: xx-small;
 }
+
+.mobile-cover-content {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mobile-cover-title {
+  width: 51%;
+  line-height: 1.5;
+  margin: 20px 0px;
+  text-align: center;
+  letter-spacing: 1.5px;
+}
+.mobile-cover-text {
+  margin: 0px 0px 20px 0px;
+  width: 85%;
+  line-height: 1.5;
+  text-align: center;
+  font-size: large;
+  letter-spacing: 1.5px;
+}
+
+.btn-test-drive-mobile {
+  margin: 20px auto;
+  border-radius: 5px;
+  height: 60px;
+  width: 85%;
+  padding: auto;
+  font-size: larger;
+  font-weight: bold;
+  background-color: #00e2c9;
+  color: #013a3c;
+  border: none;
+}
+
 .card-area h5 {
   margin-left: 5%;
   font-weight: bold;
@@ -345,12 +381,18 @@ a:hover {
 .menu-items {
   display: none;
 }
+.cover-mobile {
+  display: none;
+}
 
 @media (max-width: 550px) {
   .hamburger-menu {
     display: flex;
     height: 45px;
     /* Add styling for the hamburger icon */
+  }
+  .image-container {
+    display: none;
   }
 
   .menu-items {
@@ -360,8 +402,16 @@ a:hover {
   .header {
     display: none;
   }
-  .hamburger-icon{
+  .hamburger-icon {
     margin: 13px;
     height: 20px;
+  }
+  .cover-mobile {
+    display: flex;
+    flex-direction: column;
+    background-color: #222222;
+  }
+  .mobile-cover-content {
+    height: 360px;
   }
 }
