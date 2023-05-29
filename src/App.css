@@ -191,6 +191,7 @@ a:hover {
   border: none;
 }
 .modal-mobile {
+  padding: 20px;
   position: absolute;
   margin: 50%;
   height: 500px;
@@ -201,6 +202,7 @@ a:hover {
   color: #222222;
 }
 .modal {
+  padding: 20px;
   height: 500px;
   width: 300px;
   display: flex;
