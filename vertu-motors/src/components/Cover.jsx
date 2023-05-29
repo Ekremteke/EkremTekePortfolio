@@ -65,7 +65,7 @@ function Cover() {
                                                 onChange={(e) => setSurname(e.target.value)}
                                             />
                                         </label>
-                                        <br/>
+                                        <br />
                                         <label>
                                             Date:
                                             <input
@@ -83,7 +83,7 @@ function Cover() {
                                                 onChange={(e) => setTime(e.target.value)}
                                             />
                                         </label>
-                                        <br/>
+                                        <br />
                                         <label>
                                             Email:
                                             <input
@@ -101,12 +101,12 @@ function Cover() {
                             ) : (
                                 <div className="modal-content">
                                     <p>Dear {name} {surname},
-                                            <br />Your appointment has adjusted on {date} at {time}. We will be happy to see you.
-                                            <br />
-                                            Kind regards,
-                                            </p>
+                                        <br />Your appointment has adjusted on {date} at {time}. We will be happy to see you.
+                                        <br />
+                                        Kind regards,
+                                    </p>
                                     <br />
-                                        <button className='btn-test-drive' onClick={handleClose}>Close</button>
+                                    <button className='btn-test-drive' onClick={handleClose}>Close</button>
                                 </div>
                             )}
                         </div>

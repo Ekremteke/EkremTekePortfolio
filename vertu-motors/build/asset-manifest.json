@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2966bda6.css",
+    "main.js": "/static/js/main.8afde636.js",
+    "static/js/787.c2d9e99e.chunk.js": "/static/js/787.c2d9e99e.chunk.js",
+    "static/media/cover-desktop.png": "/static/media/cover-desktop.e22f967267062588cb21.png",
+    "static/media/interior.png": "/static/media/interior.be493ed2bd9d1bfd9294.png",
+    "static/media/electiric.png": "/static/media/electiric.3e92a0a8f1b22d3c0c3a.png",
+    "static/media/card-m50.png": "/static/media/card-m50.3de5e967bd31453cb0f8.png",
+    "static/media/card-sport.png": "/static/media/card-sport.fd03e3c9cc6052f09a09.png",
+    "static/media/card-m-sport.png": "/static/media/card-m-sport.a96f01ac50a634079dc6.png",
+    "index.html": "/index.html",
+    "main.2966bda6.css.map": "/static/css/main.2966bda6.css.map",
+    "main.8afde636.js.map": "/static/js/main.8afde636.js.map",
+    "787.c2d9e99e.chunk.js.map": "/static/js/787.c2d9e99e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2966bda6.css",
+    "static/js/main.8afde636.js"
+  ]
+}
