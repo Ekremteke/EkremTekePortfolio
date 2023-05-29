@@ -349,7 +349,7 @@ a:hover {
 @media (max-width: 550px) {
   .hamburger-menu {
     display: flex;
-    height: 40px;
+    height: 45px;
     /* Add styling for the hamburger icon */
   }
 
@@ -362,5 +362,6 @@ a:hover {
   }
   .hamburger-icon{
     margin: 13px;
+    height: 20px;
   }
 }
