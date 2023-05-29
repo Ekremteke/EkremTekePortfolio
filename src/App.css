@@ -403,7 +403,6 @@ a:hover {
   .hamburger-menu {
     display: flex;
     height: 45px;
-
   }
   .image-container {
     display: none;
@@ -467,14 +466,14 @@ a:hover {
 
   .card-price {
     font-size: 20px;
-    margin:20px 0 20px 10px
+    margin: 20px 0 20px 10px;
   }
 
   .card-bullets {
     margin-top: 10px;
     padding-left: 10px;
     font-size: 18px;
-     line-height: 2;
+    line-height: 2;
     letter-spacing: 1.5px;
   }
 
