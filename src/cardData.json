@@ -22,7 +22,8 @@
       "Rain sensor including auto headlights activation",
       "Automatic Stability Control(ASC)",
       "Standard suspension",
-      "Electric Power Steering (EPS) with Servotronic",
+      "Electric Power Steering (EPS) with", 
+      "Servotronic",
       "Automatic tailgate operation"
     ]
   },
@@ -35,7 +36,8 @@
       "Rain sensor including auto headlights activation",
       "Automatic Stability Control(ASC)",
       "Standard suspension",
-      "Electric Power Steering (EPS) with Servotronic",
+       "Electric Power Steering (EPS) with", 
+      "Servotronic",
       "Automatic tailgate operation"
     ]
   }

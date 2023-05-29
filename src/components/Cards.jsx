@@ -8,7 +8,8 @@ function Cards() {
     const images = [image1, image2, image3];
     return (
         <div className="card-area">
-            <h5>BMW i4 trims</h5>
+            <h1 className='trim-title-mobile'>BMW i4 trims</h1>
+            <h5 className='trim-title'>BMW i4 trims</h5>
             <div className="card-container">
                 {cardData.map((card, index) => (
                     <div className="card" key={index}>

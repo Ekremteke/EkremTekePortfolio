@@ -396,12 +396,14 @@ a:hover {
 .cover-mobile {
   display: none;
 }
-
+.trim-title-mobile {
+  display: none;
+}
 @media (max-width: 550px) {
   .hamburger-menu {
     display: flex;
     height: 45px;
-    /* Add styling for the hamburger icon */
+
   }
   .image-container {
     display: none;
@@ -425,5 +427,59 @@ a:hover {
   }
   .mobile-cover-content {
     height: 390px;
+  }
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+  .card {
+    width: 100%;
+    display: inline-block;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+  }
+  .trim-title {
+    display: none;
+  }
+  .trim-title-mobile {
+    display: block;
+    margin: 10%;
+  }
+
+  .card-image {
+    width: 100%;
+
+    object-fit: cover;
+  }
+
+  .card-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 10px;
+  }
+
+  .card-price {
+    font-size: 20px;
+    margin:20px 0 20px 10px
+  }
+
+  .card-bullets {
+    margin-top: 10px;
+    padding-left: 10px;
+    font-size: 18px;
+     line-height: 2;
+    letter-spacing: 1.5px;
+  }
+
+  .card-bullets li {
+    list-style-type: disc;
+    margin-left: 20px;
   }
 }
