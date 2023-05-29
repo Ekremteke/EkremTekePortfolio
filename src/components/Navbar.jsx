@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import logo from "../images/vertu-motors-logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronDown, faSearch, faLocationDot, faMicrophone } from '@fortawesome/free-solid-svg-icons';
+import { faChevronDown, faSearch, faLocationDot, faMicrophone, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faHeart as farHeart } from "@fortawesome/free-regular-svg-icons";
 import { faUser as faUserRegular } from "@fortawesome/free-regular-svg-icons";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
@@ -40,22 +40,84 @@ const Navbar = () => {
 
     return (
         <div>
-            <div className="hamburger-menu">
-                <div onClick={toggleHamburgerMenu}>
-                    <FontAwesomeIcon icon={faBars} className="hamburger-icon" />
-                </div>
-
-                {menuActive && (
-                    <div className="menu-items">
-                        <a href="#">New cars</a>
-                        <a href="#">Used cars</a>
-                        <a href="#">Servicing</a>
-                        <a href="#">Commercials</a>
+            <div className="navbar-mobile">
+                <div className="hamburger-menu">
+                    <div onClick={toggleHamburgerMenu}>
+                        <FontAwesomeIcon icon={faBars} className="hamburger-icon" />
                     </div>
-                )}
-                <div className="logo-container">
+
+                    {menuActive && (
+                        <div className="menu-items">
+                            <span>
+                                <a href="#" onClick={() => toggleMenu("newCars")}>
+                                    New cars {"   "}
+                                    <FontAwesomeIcon className="faChevronDown" icon={faChevronDown} />
+                                </a>
+                                {isMenuActive("newCars") && (
+                                    <div className="dropdown-content" ref={dropdownRef}>
+                                        <a href="#">Option 1</a>
+                                        <a href="#">Option 2</a>
+                                        <a href="#">Option 3</a>
+                                    </div>
+                                )}
+                            </span>
+                            <span>
+                                <a href="#" onClick={() => toggleMenu("usedCars")}>
+                                    Used cars{"   "}
+                                    <FontAwesomeIcon className="faChevronDown" icon={faChevronDown} />
+                                </a>
+                                {isMenuActive("usedCars") && (
+                                    <div className="dropdown-content" ref={dropdownRef}>
+                                        <a href="#">Option 1</a>
+                                        <a href="#">Option 2</a>
+                                        <a href="#">Option 3</a>
+                                    </div>
+                                )}
+                            </span>
+                            <span>
+                                <a href="#" onClick={() => toggleMenu("servicing")}>
+                                    Servicing {"   "}
+                                    <FontAwesomeIcon icon={faChevronDown} />
+                                </a>
+                                {isMenuActive("servicing") && (
+                                    <div className="dropdown-content" ref={dropdownRef}>
+                                        <a href="#">Option 1</a>
+                                        <a href="#">Option 2</a>
+                                        <a href="#">Option 3</a>
+                                    </div>
+                                )}
+                            </span>
+                            <span>
+                                <a href="#" onClick={() => toggleMenu("commercials")}>
+                                    Commercials {"   "}
+                                    <FontAwesomeIcon icon={faChevronDown} />
+                                </a>
+                                {isMenuActive("commercials") && (
+                                    <div className="dropdown-content" ref={dropdownRef}>
+                                        <a href="#">Option 1</a>
+                                        <a href="#">Option 2</a>
+                                        <a href="#">Option 3</a>
+                                    </div>
+                                )}
+                            </span>
+                        </div>
+                    )}
+
+                </div>
+                <div className="logo-container-mobile">
                     <img className="logo-image" src={logo} alt="Logo" />
                 </div>
+
+                <FontAwesomeIcon className="icon-mobile icon1" icon={faSearch} />
+                <FontAwesomeIcon className="icon-mobile" icon={farHeart} />
+                <FontAwesomeIcon className="icon-mobile" icon={faUserRegular} />
+                <FontAwesomeIcon className="icon-mobile" icon={faPhone} />
+
+
+
+
+
+
             </div>
             <header className="header">
                 <div className="logo-container">

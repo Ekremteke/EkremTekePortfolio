@@ -405,8 +405,28 @@ a:hover {
 .electrify-container-mobile {
   display: none;
 }
+.icon-container {
+  display: none;
+}
+.navbar-mobile {
+  display: none;
+}
 
 @media (max-width: 550px) {
+  .navbar-mobile {
+    display: grid;
+    grid-template-columns: 30px 70px 100px 70px 70px 70px 70px;
+    margin: 20px 20px 0px 40px;
+    justify-content: space-between;
+  }
+  .icon-container {
+    display: flex;
+    flex-direction: row;
+    text-align: right;
+  }
+  .icon-mobile {
+    height: 25px;
+  }
   .electrify-container-mobile {
     display: grid;
     background-color: #222222;
@@ -494,10 +514,17 @@ a:hover {
     line-height: 1.5;
     letter-spacing: 1.5px;
   }
+  .logo-container-mobile {
+    grid-column: 2;
+  }
+  .icon1 {
+    grid-column: 4;
+  }
 
   .hamburger-menu {
     display: flex;
     height: 45px;
+    grid-column: 1/2;
   }
   .image-container {
     display: none;
@@ -518,12 +545,15 @@ a:hover {
   .menu-items {
     display: flex;
     flex-direction: column;
+    height: 2auto;
+    background-color: #ebebeb;
+    position: absolute;
+    margin: 40px;
   }
   .header {
     display: none;
   }
   .hamburger-icon {
-    margin: 13px;
     height: 20px;
   }
   .cover-mobile {
