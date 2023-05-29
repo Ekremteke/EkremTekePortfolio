@@ -106,7 +106,6 @@ a:hover {
   position: relative;
 }
 .cover-image {
- 
   width: 100%;
   margin: 0%;
   height: auto;
@@ -117,24 +116,66 @@ a:hover {
   left: 8%;
   transform: translateY(-50%);
   color: white;
-  
 }
-.cover-title{
+.cover-title {
   width: 30%;
   line-height: 1.5;
 }
-.cover-text{
+.cover-text {
   width: 36%;
   line-height: 1.5;
 }
-.btn-test-drive{
+.btn-test-drive {
   margin-top: 15px;
   border-radius: 5px;
   height: 40px;
   padding: 10px 10px;
   font-size: 12px;
   font-weight: bold;
-  background-color:#00E2C9 ;
-  color: #013A3C;
+  background-color: #00e2c9;
+  color: #013a3c;
   border: none;
+}
+.card {
+  display: inline-block;
+  margin: 15px;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  width: 25%;
+}
+
+.card-image {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  /* margin-top: 10px; */
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card-price {
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.card-bullets {
+  margin-top: 10px;
+  padding-left: 0;
+}
+
+.card-bullets li {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+.card-container {
+  margin: 50px auto;
+  justify-content: space-between;
 }

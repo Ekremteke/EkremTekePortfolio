@@ -1,43 +1,42 @@
 [
-    {
-        "image": "../src/images/card-m50.png",
-        "name": "M 50",
-        "price":"from £65,795",
-        "bullets": ["Velour floor mats",
-        "Sun protection glass",
-        "Automatic Stability Control(ASC)",
-        "Adaptive M suspension",
-        "Storage for wireless charging",
-        "Cruise control with brake assist",
-        "Automatic tailgate operation"
+  {
+    "image": "/images/card-m50.png",
+    "name": "M 50",
+    "price": "from £65,795",
+    "bullets": [
+      "Velour floor mats",
+      "Sun protection glass",
+      "Automatic Stability Control(ASC)",
+      "Adaptive M suspension",
+      "Storage for wireless charging",
+      "Cruise control with brake assist",
+      "Automatic tailgate operation"
     ]
-
-    },
-     {
-        "image": "../src/images/card-m-sport.png",
-        "name": "M Sport",
-        "price":"from £54,980",
-        "bullets": ["Velour floor mats",
-        "Rain sensor including auto headlights activation",
-        "Automatic Stability Control(ASC)",
-        "Standard suspension",
-        "Electric Power Steering (EPS) with Servotronic",
-        "Automatic tailgate operation"
+  },
+  {
+    "image": "/images/card-m-sport.png",
+    "name": "M Sport",
+    "price": "from £54,980",
+    "bullets": [
+      "Velour floor mats",
+      "Rain sensor including auto headlights activation",
+      "Automatic Stability Control(ASC)",
+      "Standard suspension",
+      "Electric Power Steering (EPS) with Servotronic",
+      "Automatic tailgate operation"
     ]
-
-    },
-     {
-        "image": "../src/images/card-sport.png",
-        "name": "M 50",
-        "price":"from £53,480",
-        "bullets": ["Velour floor mats",
-        "Rain sensor including auto headlights activation",
-        "Automatic Stability Control(ASC)",
-        "Standard suspension",
-        "Electric Power Steering (EPS) with Servotronic",
-        "Automatic tailgate operation"
+  },
+  {
+    "image": "/images/card-sport.png",
+    "name": "Sport",
+    "price": "from £53,480",
+    "bullets": [
+      "Velour floor mats",
+      "Rain sensor including auto headlights activation",
+      "Automatic Stability Control(ASC)",
+      "Standard suspension",
+      "Electric Power Steering (EPS) with Servotronic",
+      "Automatic tailgate operation"
     ]
-
-
-    }
+  }
 ]
