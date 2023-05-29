@@ -56,6 +56,7 @@ function Cover() {
                                                 onChange={(e) => setName(e.target.value)}
                                             />
                                         </label>
+                                        <br />
                                         <label>
                                             Surname:
                                             <input
@@ -64,6 +65,7 @@ function Cover() {
                                                 onChange={(e) => setSurname(e.target.value)}
                                             />
                                         </label>
+                                        <br/>
                                         <label>
                                             Date:
                                             <input
@@ -72,6 +74,7 @@ function Cover() {
                                                 onChange={(e) => setDate(e.target.value)}
                                             />
                                         </label>
+                                        <br />
                                         <label>
                                             Time:
                                             <input
@@ -80,6 +83,7 @@ function Cover() {
                                                 onChange={(e) => setTime(e.target.value)}
                                             />
                                         </label>
+                                        <br/>
                                         <label>
                                             Email:
                                             <input
@@ -88,14 +92,21 @@ function Cover() {
                                                 onChange={(e) => setEmail(e.target.value)}
                                             />
                                         </label>
-                                        <button type="submit">Submit</button>
+                                        <br />
+                                        <button className='btn-test-drive' type="submit">Submit</button>
                                     </form>
-                                    <button onClick={handleClose}>Kapat</button>
+                                    <br />
+                                    <button className='btn-test-drive' onClick={handleClose}>Close</button>
                                 </div>
                             ) : (
                                 <div className="modal-content">
-                                    <p>Sayın {name}, {date} {time} saatte test sürüşüne bekliyoruz!</p>
-                                    <button onClick={handleClose}>Kapat</button>
+                                    <p>Dear {name} {surname},
+                                            <br />Your appointment has adjusted on {date} at {time}. We will be happy to see you.
+                                            <br />
+                                            Kind regards,
+                                            </p>
+                                    <br />
+                                        <button className='btn-test-drive' onClick={handleClose}>Close</button>
                                 </div>
                             )}
                         </div>

@@ -4,6 +4,7 @@ import Cover from './components/Cover';
 import Cards from './components/Cards';
 import React from 'react';
 import Interior from './components/Interior';
+import Electrify from './components/Electrify';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Cover />
       <Cards />
       <Interior />
+      <Electrify />
     </div>
   );
 }
