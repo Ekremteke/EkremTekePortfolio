@@ -8,8 +8,8 @@ function Interior() {
                 <div className="interior-content-container">
                     <h3 className="interior-title">Calligraphy</h3>
                     <p className="interior-text">
-                        I practice calligraphy as a hobby. Through this art, I have met many people and 
-                        volunteered for various charity events, writing the names of visitors. Calligraphy is like meditation for me.
+                        Practices calligraphy as a hobby. Through this art, He has met many good people and
+                        volunteered for various charity events, writing calligraphy for visitors. Calligraphy is like meditation for him.
                     </p>
                     <button className="btn-request-video">Order Button Coming Soon</button>
                 </div>
@@ -21,8 +21,8 @@ function Interior() {
                 <div className="interior-content-container-grid">
                     <h1 className="interior-title-grid">Calligraphy</h1>
                     <p className="interior-text-grid">
-                        I practice calligraphy as a hobby. Through this art, I have met many people and
-                        volunteered for various charity events, writing the names of visitors. Calligraphy is like meditation for me.
+                        Practices calligraphy as a hobby. Through this art, He has met many good people and
+                        volunteered for various charity events, writing calligraphy for visitors. Calligraphy is like meditation for him.
                     </p>
                     <button className="btn-test-drive-mobile2">Order Button Coming Soon</button>
                 </div>

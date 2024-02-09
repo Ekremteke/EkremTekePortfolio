@@ -30,16 +30,12 @@
   },
   {
     "image": "image3",
-    "name": "Sport",
-    "price": "From £53,480",
+    "name": "Education",
+    "price": "",
     "bullets": [
-      "Velour floor mats",
-      "Rain sensor including auto headlights activation",
-      "Automatic Stability Control(ASC)",
-      "Standard suspension",
-       "Electric Power Steering (EPS) with", 
-      "Servotronic",
-      "Automatic tailgate operation"
+      "04/2022 – 04/2023 || Full-Stack Software Development || Code Your Future",
+      "2010 – 2014 || Bachelor's Degree || Business Administration || Anadolu University",
+      "09/2007 – 08/2009 || Associate's Degree || Air NCO Higher Vocational School || Turkish Air Forces"
     ]
   }
 ]

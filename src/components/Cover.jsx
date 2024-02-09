@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import cover from "../images/cover-desktop.png";
-import mobile from "../images/cover-mobile.png";
+import cover from "../images/Cover-desktop.jpg";
+import mobile from "../images/cover_mobile.jpeg";
 
 function Cover() {
     const [isOpen, setIsOpen] = useState(false);
@@ -113,7 +113,7 @@ function Cover() {
                     <button className="btn-test-drive-mobile" onClick={handleOpen}>
                         Book a test drive
                     </button>
-                   
+
                 </div>
             </div>
             <div className="image-container">

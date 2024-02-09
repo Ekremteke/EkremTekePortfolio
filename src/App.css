@@ -102,6 +102,7 @@ a:hover {
 
 .cover-container {
   display: flex;
+  width: 100%;
 }
 .image-container {
   position: relative;
@@ -143,6 +144,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 .mobile-cover-title {
   width: 51%;
@@ -177,6 +179,9 @@ a:hover {
   margin-left: 5%;
   font-weight: bold;
   font-size: 15px;
+}
+.card-area {
+  margin-left: auto;
 }
 .btn-test-drive {
   margin-top: 10px;
@@ -560,6 +565,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     background-color: #222222;
+    width: 120%;
   }
   .mobile-cover-content {
     height: 390px;
