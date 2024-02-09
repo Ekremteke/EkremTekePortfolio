@@ -1,17 +1,17 @@
 import React from 'react'
-import image from "../images/interior.png"
+import image from "../images/Logo Ekrem Teke Calligraphi.png"
 
 function Interior() {
     return (
         <div>
             <div className="interior-container">
                 <div className="interior-content-container">
-                    <h3 className="interior-title">Explore the new BMW i4 range interior</h3>
+                    <h3 className="interior-title">Calligraphy</h3>
                     <p className="interior-text">
-                        From the cool Trend and SUV-inspired Active to the sporty ST-Line,
-                        the eighth generation Fiesta impresses across the range.
+                        I practice calligraphy as a hobby. Through this art, I have met many people and 
+                        volunteered for various charity events, writing the names of visitors. Calligraphy is like meditation for me.
                     </p>
-                    <button className="btn-request-video">Request a Personalised Video</button>
+                    <button className="btn-request-video">Order Button Coming Soon</button>
                 </div>
                 <div className="interior-image-container">
                     <img className="interior-image" src={image} alt="interior-image" />
@@ -19,12 +19,12 @@ function Interior() {
             </div>
             <div className="interior-container-grid">
                 <div className="interior-content-container-grid">
-                    <h1 className="interior-title-grid">Explore the new BMW i4 range interior</h1>
+                    <h1 className="interior-title-grid">Calligraphy</h1>
                     <p className="interior-text-grid">
-                        From the cool Trend and SUV-inspired Active to the sporty ST-Line,
-                        the eighth generation Fiesta impresses across the range.
+                        I practice calligraphy as a hobby. Through this art, I have met many people and
+                        volunteered for various charity events, writing the names of visitors. Calligraphy is like meditation for me.
                     </p>
-                    <button className="btn-test-drive-mobile2">Request a Personalised Video</button>
+                    <button className="btn-test-drive-mobile2">Order Button Coming Soon</button>
                 </div>
                 <div className="interior-image-container-grid">
                     <img className="interior-image" src={image} alt="interior-image" />

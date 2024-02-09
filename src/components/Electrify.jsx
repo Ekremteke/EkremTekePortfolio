@@ -37,23 +37,27 @@ function Electrify() {
                     <img className="electrify-image" src={image} alt="interior-image" />
                 </div>
                 <div className="electrify-content-container">
-                    <h3 className="electrify-title">Electrifying performance with the BMW i4</h3>
+                    <h3 className="electrify-title">Volunteer Activities</h3>
                     <p className="electrify-text">
-                        From the cool Trend and SUV-inspired Active to the sporty ST-Line,
-                        the eighth generation Fiesta impresses across the range.
+                        Engages in volunteerism, contributing calligraphy skills and supporting charity initiatives, 
+                        while fostering community connections. 
+                        <br />
+                        <br />
+                        Click the request button if you'd like to invite him to 
+                        contribute calligraphy to your upcoming events organized for social causes.
                     </p>
                     <div className="time-container">
                         <div className="electrifying-container">
-                            <h3>02:05 hr</h3>
-                            <p className="text">Charging at home for a Range of 62 miles</p>
+                            <h3> </h3>
+                            <p className="text"> </p>
                         </div>
                         <div className="electrifying-container2">
-                            <h3>365</h3>
-                            <p className="text">Electric range in miles</p>
+                            <h3> </h3>
+                            <p className="text"> </p>
                         </div>
                     </div>
                     <button className="btn-test-drive" onClick={handleOpen}>
-                        Book a test drive
+                        Request
                     </button>
                     {isOpen && (
                         <div className="modal">
@@ -113,7 +117,8 @@ function Electrify() {
                             ) : (
                                 <div className="modal-content">
                                     <p>Dear {name} {surname},
-                                        <br />Your appointment has adjusted on {date} at {time}. We will be happy to see you.
+                                            <br />Your invitation on {date} at {time} will be considered, 
+                                            and you will be notified at the earliest convenience.
                                         <br />
                                         Kind regards,
                                     </p>
@@ -132,23 +137,27 @@ function Electrify() {
                     <img className="electrify-image-mobile" src={image} alt="interior-image" />
                 </div>
                 <div className="electrify-content-container-mobile">
-                    <h1 className="electrify-title-mobile">Electrifying performance with the BMW i4</h1>
+                    <h1 className="electrify-title-mobile">Volunteer Activities</h1>
                     <p className="electrify-text-mobile">
-                        From the cool Trend and SUV-inspired Active to the sporty ST-Line,
-                        the eighth generation Fiesta impresses across the range.
+                        Engages in volunteerism, contributing calligraphy skills and supporting charity initiatives,
+                        while fostering community connections.
+                        <br />
+                        <br />
+                        Click the request button if you'd like to invite him to
+                        contribute calligraphy to your upcoming events organized for social causes.
                     </p>
                     <div className="time-container">
                         <div className="electrifying-container-mobile">
-                            <h1>02:05 hr</h1>
-                            <p className="text">Charging at home for a Range of 62 miles</p>
+                            <h1></h1>
+                            <p className="text"></p>
                         </div>
                         <div className="electrifying-container2-mobile">
-                            <h1>365</h1>
-                            <p className="text">Electric range in miles</p>
+                            <h1></h1>
+                            <p className="text"></p>
                         </div>
                     </div>
                     <button className="btn-test-drive-mobile2" onClick={handleOpen}>
-                        Book a test drive
+                        Request
                     </button>
                     {isOpen && (
                         <div className="modal">
@@ -208,7 +217,8 @@ function Electrify() {
                             ) : (
                                 <div className="modal-content">
                                     <p>Dear {name} {surname},
-                                        <br />Your appointment has adjusted on {date} at {time}. We will be happy to see you.
+                                            <br />Your invitation on {date} at {time} will be considered,
+                                            and you will be notified at the earliest convenience.
                                         <br />
                                         Kind regards,
                                     </p>

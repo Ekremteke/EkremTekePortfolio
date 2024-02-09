@@ -2,7 +2,7 @@ import React from 'react';
 import cardData from '../cardData.json';
 import image1 from '../images/Skills.jpg';
 import image2 from '../images/Experience.jpeg';
-import image3 from '../images//card-sport.png';
+import image3 from '../images//Education.jpeg';
 
 function Cards() {
     const images = [image1, image2, image3];
