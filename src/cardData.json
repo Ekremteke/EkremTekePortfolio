@@ -1,16 +1,17 @@
 [
   {
     "image": "image1",
-    "name": "M 50",
-    "price": "From £65,795",
+    "name": "Skills",
+    "price": "Software Developer",
     "bullets": [
-      "Velour floor mats",
-      "Sun protection glass",
-      "Automatic Stability Control(ASC)",
-      "Adaptive M suspension",
-      "Storage for wireless charging",
-      "Cruise control with brake assist",
-      "Automatic tailgate operation"
+      "JavaScript || React.js || HTML || CSS || Node.js",
+      "Web Applications",
+      "Databases (PostgreSQL)",
+      "Teamwork",
+      "Software Development Life Cycle (SDLC)",
+      "Agile Methodologies, Scrum, Remote Collaboration Tools",
+      "Problem-solving",
+      "AWS || C# || .Net"
     ]
   },
   {

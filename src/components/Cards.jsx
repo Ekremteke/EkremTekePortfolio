@@ -1,15 +1,15 @@
 import React from 'react';
 import cardData from '../cardData.json';
-import image1 from '../images/card-m50.png';
-import image2 from '../images/card-m-sport.png';
+import image1 from '../images/Skills.jpg';
+import image2 from '../images/Experience.jpeg';
 import image3 from '../images//card-sport.png';
 
 function Cards() {
     const images = [image1, image2, image3];
     return (
         <div className="card-area">
-            <h1 className='trim-title-mobile'>BMW i4 trims</h1>
-            <h5 className='trim-title'>BMW i4 trims</h5>
+            <h1 className='trim-title-mobile'>Ekrem Teke</h1>
+            <h5 className='trim-title'>Ekrem Teke</h5>
             <div className="card-container">
                 {cardData.map((card, index) => (
                     <div className="card" key={index}>
