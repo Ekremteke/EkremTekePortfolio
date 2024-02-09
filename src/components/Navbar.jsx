@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import logo from "../images/vertu-motors-logo.png";
+import logo from "../images/Logo Ekrem Teke Calligraphi.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown, faSearch, faLocationDot, faMicrophone, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faHeart as farHeart } from "@fortawesome/free-regular-svg-icons";
@@ -50,7 +50,7 @@ const Navbar = () => {
                         <div className="menu-items">
                             <span>
                                 <a href="#" onClick={() => toggleMenu("newCars")}>
-                                    New cars {"   "}
+                                    Skills {"   "}
                                     <FontAwesomeIcon className="faChevronDown" icon={faChevronDown} />
                                 </a>
                                 {isMenuActive("newCars") && (
@@ -76,7 +76,7 @@ const Navbar = () => {
                             </span>
                             <span>
                                 <a href="#" onClick={() => toggleMenu("servicing")}>
-                                    Servicing {"   "}
+                                    Projects {"   "}
                                     <FontAwesomeIcon icon={faChevronDown} />
                                 </a>
                                 {isMenuActive("servicing") && (
