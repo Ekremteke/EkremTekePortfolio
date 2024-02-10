@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import image from "../images/electiric.png"
+import image from "../images/volunteering.jpg"
 
 function Electrify() {
     const [isOpen, setIsOpen] = useState(false);
@@ -39,11 +39,11 @@ function Electrify() {
                 <div className="electrify-content-container">
                     <h3 className="electrify-title">Volunteer Activities</h3>
                     <p className="electrify-text">
-                        Engages in volunteerism, contributing calligraphy skills and supporting charity initiatives, 
-                        while fostering community connections. 
+                        Engages in volunteerism, contributing calligraphy skills and supporting charity initiatives,
+                        while fostering community connections.
                         <br />
                         <br />
-                        Click the request button if you'd like to invite him to 
+                        Click the request button if you'd like to invite him to
                         contribute calligraphy to your upcoming events organized for social causes.
                     </p>
                     <div className="time-container">
@@ -117,8 +117,8 @@ function Electrify() {
                             ) : (
                                 <div className="modal-content">
                                     <p>Dear {name} {surname},
-                                            <br />Your invitation on {date} at {time} will be considered, 
-                                            and you will be notified at the earliest convenience.
+                                        <br />Your invitation on {date} at {time} will be considered,
+                                        and you will be notified at the earliest convenience.
                                         <br />
                                         Kind regards,
                                     </p>
@@ -217,8 +217,8 @@ function Electrify() {
                             ) : (
                                 <div className="modal-content">
                                     <p>Dear {name} {surname},
-                                            <br />Your invitation on {date} at {time} will be considered,
-                                            and you will be notified at the earliest convenience.
+                                        <br />Your invitation on {date} at {time} will be considered,
+                                        and you will be notified at the earliest convenience.
                                         <br />
                                         Kind regards,
                                     </p>

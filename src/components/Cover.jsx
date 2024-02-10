@@ -92,7 +92,8 @@ function Cover() {
                         ) : (
                             <div className="modal-content">
                                 <p>Dear {name} {surname},
-                                    <br />Your appointment has adjusted on {date} at {time}. We will be happy to see you.
+                                        <br />Your invitation on {date} at {time} will be considered,
+                                        and you will be notified at the earliest convenience.
                                     <br />
                                     Kind regards,
                                 </p>
@@ -105,13 +106,13 @@ function Cover() {
                 )}
                 <img className="mobile-image" src={mobile} alt="Logo" />
                 <div className="mobile-cover-content">
-                    <h1 className="mobile-cover-title">Explore the new BMW i4 range</h1>
+                    <h1 className="mobile-cover-title">Full-Stack Software Developer</h1>
                     <p className="mobile-cover-text">
-                        From the cool Trend and SUV-inspired Active to the sporty ST-Line,
-                        the eighth generation Fiesta impresses across the range.
+                        Completed an intensive one-year training program,
+                        gaining practical experience in JavaScript, React.js, HTML, CSS,Java, PostgreSQL, Node.js, and AWS Cloud Computing.
                     </p>
                     <button className="btn-test-drive-mobile" onClick={handleOpen}>
-                        Book a test drive
+                        Request Information
                     </button>
 
                 </div>
@@ -119,13 +120,13 @@ function Cover() {
             <div className="image-container">
                 <img className="cover-image" src={cover} alt="Logo" />
                 <div className="cover-content">
-                    <h3 className="cover-title">Explore the new BMW i4 range</h3>
+                    <h3 className="cover-title">Full-Stack Software Developer</h3>
                     <p className="cover-text">
-                        From the cool Trend and SUV-inspired Active to the sporty ST-Line,
-                        the eighth generation Fiesta impresses across the range.
+                        Completed an intensive one-year training program,
+                        gaining practical experience in JavaScript, React.js, HTML, CSS,Java, PostgreSQL, Node.js, and AWS Cloud Computing.
                     </p>
                     <button className="btn-test-drive" onClick={handleOpen}>
-                        Book a test drive
+                        Request Information
                     </button>
                     {isOpen && (
                         <div className="modal">
@@ -185,7 +186,8 @@ function Cover() {
                             ) : (
                                 <div className="modal-content">
                                     <p>Dear {name} {surname},
-                                        <br />Your appointment has adjusted on {date} at {time}. We will be happy to see you.
+                                            <br />Your invitation on {date} at {time} will be considered,
+                                            and you will be notified at the earliest convenience.
                                         <br />
                                         Kind regards,
                                     </p>

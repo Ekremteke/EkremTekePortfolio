@@ -127,20 +127,25 @@ const Navbar = () => {
 
                 <span>
                     <a href="#" onClick={() => toggleMenu("newCars")}>
-                        New cars {"   "}
+                        Skills {"   "}
                         <FontAwesomeIcon className="faChevronDown" icon={faChevronDown} />
                     </a>
                     {isMenuActive("newCars") && (
                         <div className="dropdown-content" ref={dropdownRef}>
-                            <a href="#">Option 1</a>
-                            <a href="#">Option 2</a>
-                            <a href="#">Option 3</a>
+                            <a href="#">JavaScript</a>
+                            <a href="#">HTML</a>
+                            <a href="#">CSS</a>
+                            <a href="#">React</a>
+                            <a href="#">Node</a>
+                            <a href="#">C#</a>
+                            <a href="#">PSQL</a>
+                            <a href="#">Data Base</a>
                         </div>
                     )}
                 </span>
                 <span>
                     <a href="#" onClick={() => toggleMenu("usedCars")}>
-                        Used cars{"   "}
+                        Experience{"   "}
                         <FontAwesomeIcon className="faChevronDown" icon={faChevronDown} />
                     </a>
                     {isMenuActive("usedCars") && (
@@ -153,7 +158,7 @@ const Navbar = () => {
                 </span>
                 <span>
                     <a href="#" onClick={() => toggleMenu("servicing")}>
-                        Servicing {"   "}
+                        Education {"   "}
                         <FontAwesomeIcon icon={faChevronDown} />
                     </a>
                     {isMenuActive("servicing") && (
@@ -166,7 +171,7 @@ const Navbar = () => {
                 </span>
                 <span>
                     <a href="#" onClick={() => toggleMenu("commercials")}>
-                        Commercials {"   "}
+                        Volunteering {"   "}
                         <FontAwesomeIcon icon={faChevronDown} />
                     </a>
                     {isMenuActive("commercials") && (
@@ -178,7 +183,7 @@ const Navbar = () => {
                     )}
                 </span>
                 <span className="search-box-container">
-                    <input className="search-box" type="text" placeholder='Search: "Make, model or location"' />
+                    <input className="search-box" type="text" placeholder='Search: "Project"' />
                     <FontAwesomeIcon icon={faSearch} className="search-icon" />
                     <FontAwesomeIcon icon={faMicrophone} className="mic-icon" />
                 </span>
