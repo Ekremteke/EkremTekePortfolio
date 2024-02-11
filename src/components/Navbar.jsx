@@ -168,9 +168,9 @@ const Navbar = () => {
                     </a>
                     {isMenuActive("experience") && (
                         <div className="dropdown-content" ref={dropdownRef}>
-                            <a href="#">Option 1</a>
-                            <a href="#">Option 2</a>
-                            <a href="#">Option 3</a>
+                            <a href="#">will be written soon</a>
+                            <a href="#">will be written soon</a>
+                            <a href="#">will be written soon</a>
                         </div>
                     )}
                 </span>
@@ -181,22 +181,22 @@ const Navbar = () => {
                     </a>
                     {isMenuActive("education") && (
                         <div className="dropdown-content" ref={dropdownRef}>
-                            <a href="#">Option 1</a>
-                            <a href="#">Option 2</a>
-                            <a href="#">Option 3</a>
+                            <a href="#">will be written soon</a>
+                            <a href="#">will be written soon</a>
+                            <a href="#">will be written soon</a>
                         </div>
                     )}
                 </span>
                 <span>
                     <a href="#" onClick={() => toggleMenu("projects")}>
-                        Volunteering {"   "}
+                        Projects {"   "}
                         <FontAwesomeIcon icon={faChevronDown} />
                     </a>
                     {isMenuActive("projects") && (
                         <div className="dropdown-content" ref={dropdownRef}>
-                            <a href="#">Option 1</a>
-                            <a href="#">Option 2</a>
-                            <a href="#">Option 3</a>
+                            <a href="https://github.com/Ekremteke/tv-show-dom-project">TV Show Project</a>
+                            <a href="https://animalcharityevaluators.org/for-charities/voting-methods-for-group-decisions/#/">Voting Methods</a>
+                            <a href="https://github.com/Ekremteke/Full-Stack-Project-Assessment">Full-Stack-Project-Assessment</a>
                         </div>
                     )}
                 </span>
@@ -208,7 +208,7 @@ const Navbar = () => {
 
                 <div className="icon-container">
                     <FontAwesomeIcon icon={faLocationDot} className="icon" />
-                    <span className="text">Find us</span>
+                    <span className="text">Find him</span>
                 </div>
                 <div className="icon-container">
                     <FontAwesomeIcon icon={farHeart} className="icon" />

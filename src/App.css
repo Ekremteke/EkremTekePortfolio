@@ -565,7 +565,9 @@ a:hover {
     display: flex;
     flex-direction: column;
     background-color: #222222;
-    width: 120%;
+    gap: 0px;
+    padding: 0%;
+    width: 600px;
   }
   .mobile-cover-content {
     height: 390px;
