@@ -49,53 +49,58 @@ const Navbar = () => {
                     {menuActive && (
                         <div className="menu-items">
                             <span>
-                                <a href="#" onClick={() => toggleMenu("newCars")}>
+                                <a href="#" onClick={() => toggleMenu("skills")}>
                                     Skills {"   "}
                                     <FontAwesomeIcon className="faChevronDown" icon={faChevronDown} />
                                 </a>
-                                {isMenuActive("newCars") && (
+                                {isMenuActive("skills") && (
                                     <div className="dropdown-content" ref={dropdownRef}>
-                                        <a href="#">Option 1</a>
-                                        <a href="#">Option 2</a>
-                                        <a href="#">Option 3</a>
+                                        <a href="#">JavaScript</a>
+                                        <a href="#">HTML</a>
+                                        <a href="#">CSS</a>
+                                        <a href="#">React</a>
+                                        <a href="#">Node</a>
+                                        <a href="#">C#</a>
+                                        <a href="#">PSQL</a>
+                                        <a href="#">Data Base</a>
                                     </div>
                                 )}
                             </span>
                             <span>
-                                <a href="#" onClick={() => toggleMenu("usedCars")}>
-                                    Used cars{"   "}
+                                <a href="#" onClick={() => toggleMenu("experience")}>
+                                    Experience{"   "}
                                     <FontAwesomeIcon className="faChevronDown" icon={faChevronDown} />
                                 </a>
-                                {isMenuActive("usedCars") && (
+                                {isMenuActive("experience") && (
                                     <div className="dropdown-content" ref={dropdownRef}>
-                                        <a href="#">Option 1</a>
-                                        <a href="#">Option 2</a>
-                                        <a href="#">Option 3</a>
+                                        <a href="#">will be written soon</a>
+                                        <a href="#">will be written soon</a>
+                                        <a href="#">will be written soon</a>
                                     </div>
                                 )}
                             </span>
                             <span>
-                                <a href="#" onClick={() => toggleMenu("servicing")}>
+                                <a href="#" onClick={() => toggleMenu("education")}>
                                     Projects {"   "}
                                     <FontAwesomeIcon icon={faChevronDown} />
                                 </a>
-                                {isMenuActive("servicing") && (
+                                {isMenuActive("education") && (
                                     <div className="dropdown-content" ref={dropdownRef}>
-                                        <a href="#">Option 1</a>
-                                        <a href="#">Option 2</a>
-                                        <a href="#">Option 3</a>
+                                        <a href="#">will be written soon</a>
+                                        <a href="#">will be written soon</a>
+                                        <a href="#">will be written soon</a>
                                     </div>
                                 )}
                             </span>
                             <span>
-                                <a href="#" onClick={() => toggleMenu("commercials")}>
-                                    Commercials {"   "}
+                                <a href="#" onClick={() => toggleMenu("projects")}>
+                                    projects {"   "}
                                     <FontAwesomeIcon icon={faChevronDown} />
                                 </a>
-                                {isMenuActive("commercials") && (
+                                {isMenuActive("projects") && (
                                     <div className="dropdown-content" ref={dropdownRef}>
-                                        <a href="#">Option 1</a>
-                                        <a href="#">Option 2</a>
+                                        <a href="#">TV Show Project</a>
+                                        <a href="#">Voting Method</a>
                                         <a href="#">Option 3</a>
                                     </div>
                                 )}
@@ -126,11 +131,11 @@ const Navbar = () => {
 
 
                 <span>
-                    <a href="#" onClick={() => toggleMenu("newCars")}>
+                    <a href="#" onClick={() => toggleMenu("skills")}>
                         Skills {"   "}
                         <FontAwesomeIcon className="faChevronDown" icon={faChevronDown} />
                     </a>
-                    {isMenuActive("newCars") && (
+                    {isMenuActive("skills") && (
                         <div className="dropdown-content" ref={dropdownRef}>
                             <a href="#">JavaScript</a>
                             <a href="#">HTML</a>
@@ -144,11 +149,11 @@ const Navbar = () => {
                     )}
                 </span>
                 <span>
-                    <a href="#" onClick={() => toggleMenu("usedCars")}>
+                    <a href="#" onClick={() => toggleMenu("experience")}>
                         Experience{"   "}
                         <FontAwesomeIcon className="faChevronDown" icon={faChevronDown} />
                     </a>
-                    {isMenuActive("usedCars") && (
+                    {isMenuActive("experience") && (
                         <div className="dropdown-content" ref={dropdownRef}>
                             <a href="#">Option 1</a>
                             <a href="#">Option 2</a>
@@ -157,11 +162,11 @@ const Navbar = () => {
                     )}
                 </span>
                 <span>
-                    <a href="#" onClick={() => toggleMenu("servicing")}>
+                    <a href="#" onClick={() => toggleMenu("education")}>
                         Education {"   "}
                         <FontAwesomeIcon icon={faChevronDown} />
                     </a>
-                    {isMenuActive("servicing") && (
+                    {isMenuActive("education") && (
                         <div className="dropdown-content" ref={dropdownRef}>
                             <a href="#">Option 1</a>
                             <a href="#">Option 2</a>
@@ -170,11 +175,11 @@ const Navbar = () => {
                     )}
                 </span>
                 <span>
-                    <a href="#" onClick={() => toggleMenu("commercials")}>
+                    <a href="#" onClick={() => toggleMenu("projects")}>
                         Volunteering {"   "}
                         <FontAwesomeIcon icon={faChevronDown} />
                     </a>
-                    {isMenuActive("commercials") && (
+                    {isMenuActive("projects") && (
                         <div className="dropdown-content" ref={dropdownRef}>
                             <a href="#">Option 1</a>
                             <a href="#">Option 2</a>
@@ -206,11 +211,11 @@ const Navbar = () => {
                 {menuActive && (
                     <div className="menu-items">
                         <span>
-                            <a href="#" onClick={() => toggleMenu("newCars")}>
+                            <a href="#" onClick={() => toggleMenu("skills")}>
                                 New cars {"   "}
                                 <FontAwesomeIcon className="faChevronDown" icon={faChevronDown} />
                             </a>
-                            {isMenuActive("newCars") && (
+                            {isMenuActive("skills") && (
                                 <div className="dropdown-content" ref={dropdownRef}>
                                     <a href="#">Option 1</a>
                                     <a href="#">Option 2</a>
@@ -219,11 +224,11 @@ const Navbar = () => {
                             )}
                         </span>
                         <span>
-                            <a href="#" onClick={() => toggleMenu("usedCars")}>
+                            <a href="#" onClick={() => toggleMenu("experience")}>
                                 Used cars{"   "}
                                 <FontAwesomeIcon className="faChevronDown" icon={faChevronDown} />
                             </a>
-                            {isMenuActive("usedCars") && (
+                            {isMenuActive("experience") && (
                                 <div className="dropdown-content" ref={dropdownRef}>
                                     <a href="#">Option 1</a>
                                     <a href="#">Option 2</a>
@@ -232,11 +237,11 @@ const Navbar = () => {
                             )}
                         </span>
                         <span>
-                            <a href="#" onClick={() => toggleMenu("servicing")}>
-                                Servicing {"   "}
+                            <a href="#" onClick={() => toggleMenu("education")}>
+                                education {"   "}
                                 <FontAwesomeIcon icon={faChevronDown} />
                             </a>
-                            {isMenuActive("servicing") && (
+                            {isMenuActive("education") && (
                                 <div className="dropdown-content" ref={dropdownRef}>
                                     <a href="#">Option 1</a>
                                     <a href="#">Option 2</a>
@@ -245,11 +250,11 @@ const Navbar = () => {
                             )}
                         </span>
                         <span>
-                            <a href="#" onClick={() => toggleMenu("commercials")}>
-                                Commercials {"   "}
+                            <a href="#" onClick={() => toggleMenu("projects")}>
+                                projects {"   "}
                                 <FontAwesomeIcon icon={faChevronDown} />
                             </a>
-                            {isMenuActive("commercials") && (
+                            {isMenuActive("projects") && (
                                 <div className="dropdown-content" ref={dropdownRef}>
                                     <a href="#">Option 1</a>
                                     <a href="#">Option 2</a>
