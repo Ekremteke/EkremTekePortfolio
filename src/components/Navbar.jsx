@@ -81,7 +81,7 @@ const Navbar = () => {
                             </span>
                             <span>
                                 <a href="#" onClick={() => toggleMenu("education")}>
-                                    Projects {"   "}
+                                    Education {"   "}
                                     <FontAwesomeIcon icon={faChevronDown} />
                                 </a>
                                 {isMenuActive("education") && (
@@ -94,14 +94,27 @@ const Navbar = () => {
                             </span>
                             <span>
                                 <a href="#" onClick={() => toggleMenu("projects")}>
-                                    projects {"   "}
+                                    Projects {"   "}
                                     <FontAwesomeIcon icon={faChevronDown} />
                                 </a>
                                 {isMenuActive("projects") && (
                                     <div className="dropdown-content" ref={dropdownRef}>
-                                        <a href="#">TV Show Project</a>
-                                        <a href="#">Voting Method</a>
-                                        <a href="#">Option 3</a>
+                                        <a href="https://github.com/Ekremteke/tv-show-dom-project">TV Show Project</a>
+                                        <a href="https://animalcharityevaluators.org/for-charities/voting-methods-for-group-decisions/#/">Voting Methods</a>
+                                        <a href="https://github.com/Ekremteke/Full-Stack-Project-Assessment">Full-Stack-Project-Assessment</a>
+                                    </div>
+                                )}
+                            </span>
+                            <span>
+                                <a href="#" onClick={() => toggleMenu("education")}>
+                                    Interests {"   "}
+                                    <FontAwesomeIcon icon={faChevronDown} />
+                                </a>
+                                {isMenuActive("education") && (
+                                    <div className="dropdown-content" ref={dropdownRef}>
+                                        <a href="#">Swimming</a>
+                                        <a href="#">Cycling</a>
+                                        <a href="#">Calligraphi</a>
                                     </div>
                                 )}
                             </span>
