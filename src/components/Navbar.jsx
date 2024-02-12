@@ -99,7 +99,7 @@ const Navbar = () => {
                                 </a>
                                 {isMenuActive("projects") && (
                                     <div className="dropdown-content" ref={dropdownRef}>
-                                        <a href="https://github.com/Ekremteke/tv-show-dom-project">TV Show Project</a>
+                                        <a href="https://cyf-ekremteke-tv.netlify.app/">TV Show Project</a>
                                         <a href="https://animalcharityevaluators.org/for-charities/voting-methods-for-group-decisions/#/">Voting Methods</a>
                                         <a href="https://github.com/Ekremteke/Full-Stack-Project-Assessment">Full-Stack-Project-Assessment</a>
                                     </div>
