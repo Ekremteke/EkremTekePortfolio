@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import image from "../images/volunteering.jpg"
+import image from "../images/volunteering.jpg";
+import MyFormComponent from './MyFormComponent';
 
 function Electrify() {
     const [isOpen, setIsOpen] = useState(false);
@@ -24,15 +25,21 @@ function Electrify() {
         setEmail('');
     };
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-
+    const handleSubmit = (formData) => {
+        // Handle form data submission logic here
+        console.log('Form Data from Electrify:', formData);
         setShowConfirmation(true);
     };
 
     return (
         <div>
             <div className="electrify-container">
+                {isOpen && (
+                    <MyFormComponent
+                        onRequestClose={handleClose}
+                        onSubmit={handleSubmit}
+                    />
+                )}
                 <div className="electrify-image-container">
                     <img className="electrify-image" src={image} alt="interior-image" />
                 </div>
@@ -46,93 +53,18 @@ function Electrify() {
                         Click the request button if you'd like to invite him to
                         contribute calligraphy to your upcoming events organized for social causes.
                     </p>
-                    <div className="time-container">
-                        <div className="electrifying-container">
-                            <h3> </h3>
-                            <p className="text"> </p>
-                        </div>
-                        <div className="electrifying-container2">
-                            <h3> </h3>
-                            <p className="text"> </p>
-                        </div>
-                    </div>
                     <button className="btn-test-drive" onClick={handleOpen}>
                         Request
                     </button>
-                    {isOpen && (
-                        <div className="modal">
-                            {!showConfirmation ? (
-                                <div className="modal-content">
-                                    <form onSubmit={handleSubmit}>
-                                        <label>
-                                            Name:
-                                            <input
-                                                type="text"
-                                                value={name}
-                                                onChange={(e) => setName(e.target.value)}
-                                            />
-                                        </label>
-                                        <br />
-                                        <label>
-                                            Surname:
-                                            <input
-                                                type="text"
-                                                value={surname}
-                                                onChange={(e) => setSurname(e.target.value)}
-                                            />
-                                        </label>
-                                        <br />
-                                        <label>
-                                            Date:
-                                            <input
-                                                type="date"
-                                                value={date}
-                                                onChange={(e) => setDate(e.target.value)}
-                                            />
-                                        </label>
-                                        <br />
-                                        <label>
-                                            Time:
-                                            <input
-                                                type="time"
-                                                value={time}
-                                                onChange={(e) => setTime(e.target.value)}
-                                            />
-                                        </label>
-                                        <br />
-                                        <label>
-                                            Email:
-                                            <input
-                                                type="email"
-                                                value={email}
-                                                onChange={(e) => setEmail(e.target.value)}
-                                            />
-                                        </label>
-                                        <br />
-                                        <button className='btn-test-drive' type="submit">Submit</button>
-                                    </form>
-                                    <br />
-                                    <button className='btn-test-drive' onClick={handleClose}>Close</button>
-                                </div>
-                            ) : (
-                                <div className="modal-content">
-                                    <p>Dear {name} {surname},
-                                        <br />Your invitation on {date} at {time} will be considered,
-                                        and you will be notified at the earliest convenience.
-                                        <br />
-                                        Kind regards,
-                                    </p>
-                                    <br />
-                                    <button className='btn-test-drive' onClick={handleClose}>Close</button>
-                                </div>
-                            )}
-                        </div>
-
-                    )}
                 </div>
-
             </div>
             <div className="electrify-container-mobile">
+                {isOpen && (
+                    <MyFormComponent
+                        onRequestClose={handleClose}
+                        onSubmit={handleSubmit}
+                    />
+                )}
                 <div className="electrify-image-container-mobile">
                     <img className="electrify-image-mobile" src={image} alt="interior-image" />
                 </div>
@@ -146,94 +78,13 @@ function Electrify() {
                         Click the request button if you'd like to invite him to
                         contribute calligraphy to your upcoming events organized for social causes.
                     </p>
-                    <div className="time-container">
-                        <div className="electrifying-container-mobile">
-                            <h1></h1>
-                            <p className="text"></p>
-                        </div>
-                        <div className="electrifying-container2-mobile">
-                            <h1></h1>
-                            <p className="text"></p>
-                        </div>
-                    </div>
                     <button className="btn-test-drive-mobile2" onClick={handleOpen}>
                         Request
                     </button>
-                    {isOpen && (
-                        <div className="modal">
-                            {!showConfirmation ? (
-                                <div className="modal-content">
-                                    <form onSubmit={handleSubmit}>
-                                        <label>
-                                            Name:
-                                            <input
-                                                type="text"
-                                                value={name}
-                                                onChange={(e) => setName(e.target.value)}
-                                            />
-                                        </label>
-                                        <br />
-                                        <label>
-                                            Surname:
-                                            <input
-                                                type="text"
-                                                value={surname}
-                                                onChange={(e) => setSurname(e.target.value)}
-                                            />
-                                        </label>
-                                        <br />
-                                        <label>
-                                            Date:
-                                            <input
-                                                type="date"
-                                                value={date}
-                                                onChange={(e) => setDate(e.target.value)}
-                                            />
-                                        </label>
-                                        <br />
-                                        <label>
-                                            Time:
-                                            <input
-                                                type="time"
-                                                value={time}
-                                                onChange={(e) => setTime(e.target.value)}
-                                            />
-                                        </label>
-                                        <br />
-                                        <label>
-                                            Email:
-                                            <input
-                                                type="email"
-                                                value={email}
-                                                onChange={(e) => setEmail(e.target.value)}
-                                            />
-                                        </label>
-                                        <br />
-                                        <button className='btn-test-drive' type="submit">Submit</button>
-                                    </form>
-                                    <br />
-                                    <button className='btn-test-drive' onClick={handleClose}>Close</button>
-                                </div>
-                            ) : (
-                                <div className="modal-content">
-                                    <p>Dear {name} {surname},
-                                        <br />Your invitation on {date} at {time} will be considered,
-                                        and you will be notified at the earliest convenience.
-                                        <br />
-                                        Kind regards,
-                                    </p>
-                                    <br />
-                                    <button className='btn-test-drive' onClick={handleClose}>Close</button>
-                                </div>
-                            )}
-                        </div>
-
-                    )}
                 </div>
-
             </div>
         </div>
-    )
+    );
 }
 
-export default Electrify
+export default Electrify;
