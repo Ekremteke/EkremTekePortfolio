@@ -8,8 +8,8 @@ function Interior() {
                 <div className="interior-content-container">
                     <h3 className="interior-title">Calligraphy</h3>
                     <p className="interior-text">
-                        Practices calligraphy as a hobby. Through this art, He has met many good people and
-                        volunteered for various charity events, writing calligraphy for visitors. Calligraphy is like meditation for him.
+                        {/* Practices calligraphy as a hobby. Through this art, He has met many good people and
+                        volunteered for various charity events, writing calligraphy for visitors. Calligraphy is like meditation for him. */}
                     </p>
                     <button className="btn-request-video">Order Button Coming Soon</button>
                 </div>
