@@ -4,16 +4,16 @@ import Cover from './components/Cover';
 import Cards from './components/Cards';
 import React from 'react';
 import Interior from './components/Interior';
-import Electrify from './components/Electrify';
+import Volunteering from './components/Volunteering';
 
 function App() {
   return (
-    <div>
+    <div className='main-container'>
       <Navbar />
       <Cover />
       <Cards />
       <Interior />
-      <Electrify />
+      <Volunteering />
     </div>
   );
 }

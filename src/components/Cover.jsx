@@ -5,12 +5,15 @@ import MyFormComponent from './MyFormComponent';
 
 function Cover() {
     const [isOpen, setIsOpen] = useState(false);
+
+    /* eslint-disable no-unused-vars */
     const [name, setName] = useState('');
     const [surname, setSurname] = useState('');
     const [date, setDate] = useState('');
     const [time, setTime] = useState('');
     const [email, setEmail] = useState('');
     const [showConfirmation, setShowConfirmation] = useState(false);
+    /* eslint-enable no-unused-vars */
 
     const handleOpen = () => {
         setIsOpen(true);
@@ -33,7 +36,8 @@ function Cover() {
     };
 
     return (
-        <div className="cover-container">
+        
+        <div>
             <div className='cover-mobile'>
                 {isOpen && (
                     <MyFormComponent
@@ -53,7 +57,8 @@ function Cover() {
                     </button>
                 </div>
             </div>
-            <div className="image-container">
+            <div className="cover-container">
+                <div className="image-container">
                 <img className="cover-image" src={cover} alt="Logo" />
                 <div className="cover-content">
                     <h3 className="cover-title">Full-Stack Software Developer</h3>
@@ -64,16 +69,20 @@ function Cover() {
                     <button className="btn-test-drive" onClick={handleOpen}>
                         Request Information
                     </button>
-                    {isOpen && (
+                    <div>
+                {isOpen && (
                         <MyFormComponent
                             onRequestClose={handleClose}
                             onSubmit={handleSubmit}
                         />
                     )}
                 </div>
+                </div>
+            </div>
             </div>
         </div>
     );
+    
 }
 
 export default Cover;

@@ -39,7 +39,7 @@ const Navbar = () => {
     };
 
     return (
-        <div>
+        <div className="navbar-container">
             <div className="navbar-mobile">
                 <div className="hamburger-menu">
                     <div onClick={toggleHamburgerMenu}>
