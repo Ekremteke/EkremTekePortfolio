@@ -688,3 +688,13 @@ a:hover {
     height: 250px;
   }
 }
+@media (min-width: 1400px) {
+  .volunteering-container {
+    height: auto; /* Adjust the container height */
+  }
+
+  .volunteering-image {
+    max-width: 100%; /* Ensure the image scales properly */
+    height: auto;
+  }
+}
