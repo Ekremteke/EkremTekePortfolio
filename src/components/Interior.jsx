@@ -14,7 +14,7 @@ function Interior() {
                     <button className="btn-request-video">Order Button Coming Soon</button>
                 </div>
                 <div className="interior-image-container">
-                    <img className="interior-image" src={image} alt="interior-image" />
+                    <img className="interior-image" src={image} alt="Ekrem's calligraphic name" />
                 </div>
             </div>
             <div className="interior-container-grid">
@@ -24,10 +24,11 @@ function Interior() {
                         Practices calligraphy as a hobby. Through this art, He has met many good people and
                         volunteered for various charity events, writing calligraphy for visitors. Calligraphy is like meditation for him.
                     </p>
-                    <button className="btn-test-drive-mobile2">Order Button Coming Soon</button>
+                    
                 </div>
+                <button className="btn-test-drive-mobile2">Order Button Coming Soon</button>
                 <div className="interior-image-container-grid">
-                    <img className="interior-image" src={image} alt="interior-image" />
+                    <img className="interior-image" src={image} alt="Ekrem's calligraphic name" />
                 </div>
             </div>
 

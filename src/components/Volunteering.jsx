@@ -79,10 +79,11 @@ function Volunteering() {
                         Click the request button if you'd like to invite him to
                         contribute calligraphy to your upcoming events organized for social causes.
                     </p>
+                    </div>
                     <button className="btn-test-drive-mobile2" onClick={handleOpen}>
                         Request
                     </button>
-                </div>
+                
             </div>
         </div>
     );
